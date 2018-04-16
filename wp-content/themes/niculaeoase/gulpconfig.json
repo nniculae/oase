@@ -1,7 +1,7 @@
 {
   "browserSyncOptions": {
     "open": "external",
-    "proxy": "http://localhost/oase2",
+    "proxy": "http://www.inloophuisoasegoes.nl.local",
     "port": 8080
   },
   "browserSyncWatchFiles": [
