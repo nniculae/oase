@@ -12,7 +12,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
-
+<div class="color-bars d-flex">
+        <div class="cb1"></div>
+        <div class="cb2"></div>
+        <div class="cb3"></div>
+        <div class="cb4"></div>
+        <div class="cb5"></div>
+    </div>
 <div class="wrapper" id="wrapper-footer">
 	
 	<div class="container-fluid">

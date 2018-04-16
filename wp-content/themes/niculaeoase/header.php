@@ -25,7 +25,7 @@ $container = get_theme_mod('understrap_container_type');
 	</head>
 
 	<body <?php body_class(); ?>>
-
+	
 		<div class="hfeed site" id="page">
 
 			<!-- ******************* The Navbar Area ******************* -->
@@ -98,7 +98,13 @@ $container = get_theme_mod('understrap_container_type');
 			</div>
 			<!-- #wrapper-navbar end -->
 
-			
-			<div class="container-angled">
+			<div class="color-bars d-flex">
+        <div class="cb1"></div>
+        <div class="cb2"></div>
+        <div class="cb3"></div>
+        <div class="cb4"></div>
+        <div class="cb5"></div>
+    </div>
+			<!-- <div class="container-angled"> -->
 				<div class="wrapper-angled-header"></div>
-			</div>
+			<!-- </div> -->

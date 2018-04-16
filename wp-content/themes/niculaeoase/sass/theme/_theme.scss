@@ -16,7 +16,41 @@
    
        
 }
-
+.color-bars {
+    >div {
+        height: 6px;
+        width: 20%;
+    }
+    .cb1 {
+        background-color: $chambray;
+    }
+    .cb2 {
+        // background-color: tint($chambray, 42%);
+        background-color: $secondary;
+    }
+    .cb3 {
+        // background-color: $equator;
+        background-color: $equator;
+    }
+    .cb4 {
+        background-color: $tacao;
+    }
+    .cb5 {
+        background-color: $navajo-white;
+    }
+}
+.widget-title{
+    color: $secondary;
+}
+.month_name{
+    color: $info;
+}
+.em-calnav{
+    color: $info;
+}
+.entry-title{
+    color: $secondary;
+}
 .container-angled{
     background-color:$secondary;
     color: #FFF;
@@ -40,10 +74,11 @@
      
     position: relative;
     width: 100%;
-    height: 10px;
+    // height: 10px;
     bottom: 0;
     left: 0;
     right: 0;
+    top:0;
     z-index: 2;
     opacity: 0.8;
     animation: pulse 5.6s 1.2s infinite;
