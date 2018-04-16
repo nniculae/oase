@@ -69,3 +69,8 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Event Manager
+ */
+require get_template_directory() . '/inc/events-manager-filters.php';
