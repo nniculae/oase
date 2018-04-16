@@ -14,9 +14,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_sidebar( 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
-
-	<div class="<?php echo esc_attr( $container ); ?>">
-
+	
+	<div class="container-fluid">
 		<div class="row">
 
 			<div class="col-md-12">
@@ -25,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-							<h5>Designed and developed by Niculae Niculae. All rights reserved. </h5>
+							<h6>Designed and developed by Niculae Niculae. All rights reserved. </h6>
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->

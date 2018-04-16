@@ -1,5 +1,88 @@
+@import "mixins-t";
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// html,body {
+//     height: 100%;
+// }
 
+// #index-wrapper{
+//      height: 80%!important;
+// }
+// .hfeed{
+//     height: 100%!important;
+// }
+#navbarNavDropdown {
+    // horzintontally align
+    justify-content: flex-end; 
+   
+       
+}
+
+.container-angled{
+    background-color:$secondary;
+    color: #FFF;
+    padding: 110px 0 0;
+    position: relative;
+}
+
+.container-angled{
+    // @include angled-edge('outside bottom','lower right',$secondary);
+}
+
+@keyframes pulse {
+    0%, 100% {
+      opacity: 0.8; }
+    50% {
+      opacity: 1; } 
+}
+
+
+.wrapper-angled-header{
+     
+    position: relative;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 0.8;
+    animation: pulse 5.6s 1.2s infinite;
+}
+.wrapper-angled-header{
+     @include angled-edge('outside bottom','lower right',$primary);
+     
+}
+#navbarNavDropdown a{
+   
+    font-weight: 700;
+    
+}
+#page-wrapper{
+    min-height:82vh;
+    margin-top: 80px;
+}
+#wrapper-footer{
+    padding: 0;
+    .container-fluid{
+        padding: 0;
+    }
+    .row{
+        margin: 0;
+        .col-md-12{
+            padding: 0;
+        }
+    }
+}
+
+.site-footer{
+    background-color: #f8f9fa!important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.em-calendar{
+    width: 100%;
+}
 /*Events manager*/
 .calendar-cards .card {
      margin-bottom: 10px;
@@ -20,4 +103,18 @@
     padding-left: 0 !important;
 }
 
-/*Contact form 7 */
+// hide by author
+.byline {
+    display: none;
+}
+
+//sponsors
+div#container-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+}
+#container-sponsors  > *{
+    width: 50%;
+    min-width: 300px;
+    padding: 10px;
+}

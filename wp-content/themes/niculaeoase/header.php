@@ -97,3 +97,8 @@ $container = get_theme_mod('understrap_container_type');
 
 			</div>
 			<!-- #wrapper-navbar end -->
+
+			
+			<div class="container-angled">
+				<div class="wrapper-angled-header"></div>
+			</div>
