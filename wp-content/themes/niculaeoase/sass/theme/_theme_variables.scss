@@ -1,11 +1,36 @@
 // Use this file to overwrite the basic Bootstrap variables and add your own variables
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+/* #region Oase Palette */
 
+$Brown_Seal_Brown: rgb(47, 33, 18);
+$Brown_Tobacco_Brown: rgb(105, 91, 61);
+$Brown_Bronco: rgb(166, 150, 128);
+$Brown_Fallow: rgb(185, 149, 107);
 
-$primary: #3B5998; 
-$secondary:#e77500;
+$Green_Turtle_Green: rgb(33, 45, 21);
+$Green_Clover: rgb(75, 97, 56);
+$Green_Hippie_Green: rgb(85, 145, 100);
+$Green_Sage: rgb(141, 158, 123);
+$Green_GreenSmoke: rgb(163, 165, 90);
 
+$Blue_Endeavour: rgb(42, 95, 153);
+$Blue_Smalt_Blue: rgb(76, 97, 112);
+$Blue_Cornflower_Blue: rgb(124, 168, 238);
+$Blue_Botticelli: rgb(155, 176, 184);
+$Blue_Spindel: rgb(180, 204, 218);
+
+$Yellow_Apache: rgb(212, 160, 95);
+$Yellow_Raffia: rgb(225, 201, 168);
+/* #endregion Oase Palette */
+
+/* #region BS colors */
+
+// $primary: #3B5998;
+// $secondary:#e77500;
+$primary: $Blue_Endeavour;
+$secondary:$Green_Hippie_Green;
+/* #region BS colors */
 
 $chambray: #3B5998;
 $nepal:#8B9DC3;

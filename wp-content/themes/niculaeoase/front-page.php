@@ -12,45 +12,66 @@
 
 get_header();
 
-$container   = get_theme_mod( 'understrap_container_type' );
+$container   = get_theme_mod('understrap_container_type');
 
 ?>
 
 <div class="wrapper" id="page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<main id="home-block-container">
+				<div class="hometop blocks">
+					<div class="about expanda">
+						About US
+					</div>
+					<div class="hometopright">
+						<!-- 2 -->
+						<div class="discover expanda">
+							DISCOVER
+						</div>
+						<div class="blog expanda">
+							BLOG
+						</div>
+					</div>
+				</div>
+				<div class="offsetcontainer">
+					<div class="homebottom blocks">
+						<div class="homebottomleft">
+							<div class="blocks">
+								<div class="fb expanda">Facebook</div>
+								<div class="instagram expanda">Instagram</div>
+							</div>
+							<div class="blocks">
+								<div class="worktogether expanda">
+									Lets work together
+								</div>
+							</div>
+						</div>
+						<div class="services expanda">Our Services </div>
 
-			<main class="site-main" id="main">
+					</div>
+					<a href="#" class="to-top"><i class="fas fa-angle-up"></i></a>
 
-				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'loop-templates/content', 'front' ); ?>
+				</div>
+			</main>
+			<!-- #main -->
 
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
+		</div>
+		<!-- #primary -->
 
-				<?php endwhile; // end of the loop. ?>
 
-			</main><!-- #main -->
 
-		</div><!-- #primary -->
+	</div>
+	<!-- .row -->
 
-		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+</div>
+<!-- Container end -->
 
-	</div><!-- .row -->
+</div>
+<!-- Wrapper end -->
 
-</div><!-- Container end -->
-
-</div><!-- Wrapper end -->
-
-<?php get_footer(); ?>
+<?php get_footer();

@@ -1,21 +1,20 @@
 @import "mixins-t";
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-// html,body {
-//     height: 100%;
-// }
 
-// #index-wrapper{
-//      height: 80%!important;
-// }
-// .hfeed{
-//     height: 100%!important;
-// }
+body{
+    overflow-y:scroll;
+  }
+@media (min-width: 1420px){
+	.container {
+    max-width: 1400px;
+}
+}
 #navbarNavDropdown {
     // horzintontally align
     justify-content: flex-end; 
    
        
 }
+/* #region Color bars */
 .color-bars {
     >div {
         height: 6px;
@@ -39,6 +38,7 @@
         background-color: $navajo-white;
     }
 }
+/* #endregion Color bars */
 .widget-title{
     color: $secondary;
 }
@@ -93,8 +93,8 @@
     
 }
 #page-wrapper{
-    min-height:82vh;
-    margin-top: 80px;
+    // min-height:82vh;
+    // margin-top: 80px;
 }
 #wrapper-footer{
     padding: 0;
@@ -110,10 +110,11 @@
 }
 
 .site-footer{
-    background-color: #f8f9fa!important;
+    background-color: #403e3e;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    color: white;
 }
 .em-calendar{
     width: 100%;
@@ -152,4 +153,144 @@ div#container-sponsors {
     width: 50%;
     min-width: 300px;
     padding: 10px;
+}
+// Vertical alignment
+div#page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // background-color: red;
+}
+
+div#page-wrapper {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    
+}
+div#page-wrapper #content {
+    // background-color: $gray-200;
+    margin-bottom: -60px;
+    margin-top: 60px;
+    z-index: 5000;
+    
+}
+
+// Home Page
+// blocks
+#home-block-container{
+    height: 100%;
+    width: 100%;
+   
+  .blocks{
+    display: flex;
+ }
+ .hometop{
+    //  background-color: green;
+     .about{
+        margin-bottom: -13.8%;
+        width: 31.65vw;
+        max-width: 443.08px;
+        background-color: #d24345;
+
+        
+
+     }
+     
+     .hometopright{
+         flex-grow: 2;
+
+            .discover{
+                
+                height: 27.5vw;
+                // max-width: 385px;
+                max-height: 385px;
+                background-color: goldenrod;
+            }
+            .blog{
+                
+                height: 27.5vw;
+                max-height: 385px;
+                background-color: rgb(128, 0, 90);
+            }
+
+     }
+ }
+
+ .offsetcontainer{
+
+    position: relative;
+     z-index: 7000;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .homebottom{
+        // background-color:hotpink;
+        // flex-direction: row-reverse;
+        .fb{
+            width: 27.5vw;
+            height: 27.5vw;
+             max-width: 385px;
+            max-height: 385px;
+            background-color: lightsalmon;
+        }
+        .instagram{
+            width: 27.5vw;
+            height: 27.5vw;
+            max-width: 385px;
+            max-height: 385px;
+            background-color: lime;
+        }
+        .worktogether{
+             flex-grow: 2;
+             height: 27.5vw;
+            //  max-width: 385px;
+             max-height: 315px;
+             background-color: cyan;
+        }
+        .services{
+            flex-grow: 2;
+            background-color:$orange;
+            max-height: 700px;;
+
+            // width: 31.65vw;
+            //max-width: 443.08px;
+        }
+
+        
+    }
+
+
+} 
+
+ 
+}
+
+.expanda:hover {
+   
+    transform: scale(1.02);
+    transition: all .2s;
+    z-index: 1;
+    box-shadow: 0 0 22px -3px rgba(0,0,0,.75);
+}
+.expanda {
+    transition: all .2s;
+    cursor:pointer;
+}
+.to-top {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: #23a75d;
+    height: 60px;
+    width: 60px;
+    font-size: 38px;
+    padding: 8px 0 0;
+    text-align: center;
+    color: #fff;
+    display: block;
+    -ms-flex-item-align: end;
+    align-self: flex-end
 }
