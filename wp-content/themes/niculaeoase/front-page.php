@@ -18,63 +18,84 @@ $container   = get_theme_mod('understrap_container_type');
 
 ?>
 
-<div class="wrapper front-page" id="page-wrapper">
+	<div class="wrapper front-page" id="page-wrapper">
 
-	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
+		<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
-		<div class="row">
+			<div class="row">
 
-			<main id="home-block-container">
-				<div class="hometop blocks">
-					<a href="/info" class="about homeblock expanda">
-						<h1>Over <br><strong>Ons</strong></h1>
-						
-                    </a>
-					<div class="hometopright">
-						<!-- 2 -->
-						<a href="/activiteiten" class="discover homeblock expanda">
-							<h1>Onze <br><strong> Activiteiten</strong></h1>
+				<main id="home-block-container">
+					<div class="hometop blocks">
+						<a href="/info" class="about homeblock expanda">
+							<h1>Over
+								<br>
+								<strong>Ons</strong>
+							</h1>
+
 						</a>
-						<a href="/nieuws" class="blog homeblock expanda">
-							<h1>Laatste<br><strong> artikels</strong></h1>
-						</a>
-					</div>
-				</div>
-				<div class="offsetcontainer">
-					<div class="homebottom blocks">
-						<div class="homebottomleft">
-							<div class="blocks">
-								<div class="fb expanda">Facebook</div>
-								<div class="instagram expanda">Instagram</div>
-							</div>
-							<div class="blocks">
-								<div class="worktogether expanda">
-									Lets work together
-								</div>
-							</div>
+						<div class="hometopright">
+							<!-- 2 -->
+							<a href="/activiteiten" class="discover homeblock expanda">
+								<h1>Onze
+									<br>
+									<strong> Activiteiten</strong>
+								</h1>
+							</a>
+							<a href="/nieuws" class="blog homeblock expanda">
+								<h1>Laatste
+									<br>
+									<strong> artikels</strong>
+								</h1>
+							</a>
 						</div>
-						<div class="services homeblock expanda">Our Services </div>
+					</div>
+					<div class="offsetcontainer">
+						<div class="homebottom blocks">
+							<div class="homebottomleft">
+
+								<a href="/info" class="fotos homeblock expanda">
+									<h1>Onze
+										<br>
+										<strong>Fotos</strong>
+									</h1>
+								</a>
+								<a href="/sponsors" class="sponsors homeblock expanda">
+									<h1>Onze
+										<br>
+										<strong>Sponsors</strong>
+									</h1>
+								</a>
+
+							</div>
+							
+							<a href="/info" class="contact homeblock expanda">
+								<h1>Contact
+									<br><strong>Ons</strong>
+								</h1>
+
+							</a>
+						</div>
+						<a href="#" class="to-top">
+							<i class="fa fa-angle-up"></i>
+						</a>
+
 
 					</div>
-					<a href="#" class="to-top"><i class="fas fa-angle-up"></i></a>
+				</main>
+				<!-- #main -->
+
+			</div>
+			<!-- #primary -->
 
 
-				</div>
-			</main>
-			<!-- #main -->
 
 		</div>
-		<!-- #primary -->
-
-
+		<!-- .row -->
 
 	</div>
-	<!-- .row -->
+	<!-- Container end -->
 
-</div>
-<!-- Container end -->
+	</div>
+	<!-- Wrapper end -->
 
-</div>
-<!-- Wrapper end -->
-
-<?php get_footer();
+	<?php get_footer();

@@ -1,0 +1,63 @@
+$navbar-oase-color:                $primary;
+$navbar-oase-hover-color:          $secondary;
+$navbar-oase-active-color:         $navbar-oase-hover-color;
+$navbar-oase-disabled-color:       rgba($black, .3) !default;
+$navbar-oase-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-oase-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-oase-toggler-border-color: rgba($black, .1) !default;
+
+
+// Navbar themes
+//
+// Styles for switching between navbars with oase or dark background.
+
+// Dark links against a oase background
+.navbar-oase {
+    .navbar-brand {
+      color: $navbar-oase-active-color;
+  
+      @include hover-focus {
+        color: $navbar-oase-active-color;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-oase-color;
+  
+        @include hover-focus {
+          color: $navbar-oase-hover-color;
+        }
+  
+        &.disabled {
+          color: $navbar-oase-disabled-color;
+        }
+      }
+  
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-oase-active-color;
+      }
+    }
+  
+    .navbar-toggler {
+      color: $navbar-oase-color;
+      border-color: $navbar-oase-toggler-border-color;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: $navbar-oase-toggler-icon-bg;
+    }
+  
+    .navbar-text {
+      color: $navbar-oase-color;
+      a {
+        color: $navbar-oase-active-color;
+  
+        @include hover-focus {
+          color: $navbar-oase-active-color;
+        }
+      }
+    }
+  }

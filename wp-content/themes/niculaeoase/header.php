@@ -41,7 +41,7 @@ $container = get_theme_mod('understrap_container_type');
 					<?php esc_html_e('Skip to content', 'understrap'); ?>
 				</a>
 
-				<nav class="navbar navbar-expand-md navbar-light bg-light">
+				<nav class="navbar navbar-expand-md navbar-oase bg-light">
 
 					<?php if ('container' == $container) : ?>
 					<div class="container">
