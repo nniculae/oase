@@ -1,4 +1,4 @@
-// @import "mixins-t";
+@import "mixins-t";
 /* 
 NavBar
 Color bars
@@ -20,6 +20,9 @@ Angled header
 /* #region  Color bars */
 
 .color-bars {
+
+    display: flex;
+    flex-direction: row-reverse;
     >div {
         height: 6px;
         width: 20%;
@@ -171,6 +174,9 @@ body {
 }
 .entry-title {
     color: $secondary;
+    a{
+        color: $secondary;
+    }
 }
 
 /* #endregion Article */
@@ -198,16 +204,19 @@ div#page {
     min-height: 100vh;
 }
 
-div#page-wrapper {
+#page-wrapper {
     flex: 1; // 
     height: 100%;
     display: flex;
+}
+#page-wrapper.front-page {
+   padding-top: 0;
 }
 
 div#page-wrapper #content {
     // background-color: $gray-200;
     margin-bottom: -60px;
-    margin-top: 60px;
+    // margin-top: 60px;
     z-index: 5000;
 }
 
@@ -218,8 +227,29 @@ div#page-wrapper #content {
 // Home Page
 // blocks
 #home-block-container {
+    color: $white;
     height: 100%;
     width: 100%;
+
+    h1{
+        font-size: 4.6em;
+        line-height: .9em;
+        font-weight: 200;
+        text-transform: uppercase;
+        strong{
+            font-weight: 600;
+            line-height: .8em;
+            font-size: 1.7em;
+        }
+    }
+
+
+    a{
+        color: $white;
+        text-decoration: none;
+        display: block;
+    }
+
     .blocks {
         display: flex;
     }
@@ -229,19 +259,23 @@ div#page-wrapper #content {
             margin-bottom: -13.8%;
             width: 31.65vw;
             max-width: 443.08px;
-            background-color: #d24345;
+            background-color: tint($Green_Hippie_Green, 12%);
+           
+        }
+        .homeblock{
+            padding: 30px 3.5vw 85px;
         }
         .hometopright {
             flex-grow: 2;
             .discover {
                 height: 27.5vw; // max-width: 385px;
                 max-height: 385px;
-                background-color: goldenrod;
+                background-color:  tint($Yellow_Apache,12%);
             }
             .blog {
                 height: 27.5vw;
                 max-height: 385px;
-                background-color: rgb(128, 0, 90);
+                background-color:tint( $Blue_Endeavour,15%);
             }
         }
     }
@@ -250,34 +284,40 @@ div#page-wrapper #content {
         z-index: 7000;
         padding-left: 60px;
         padding-right: 60px;
+
+        .homebottomleft{
+            // flex-grow: 2;
+        }
+
         .homebottom {
             // background-color:hotpink;
             // flex-direction: row-reverse;
             .fb {
+                // flex-grow: 2;
                 width: 27.5vw;
                 height: 27.5vw;
                 max-width: 385px;
                 max-height: 385px;
-                background-color: lightsalmon;
+                background-color: tint( $Blue_Endeavour,15%);
             }
             .instagram {
                 width: 27.5vw;
                 height: 27.5vw;
                 max-width: 385px;
                 max-height: 385px;
-                background-color: lime;
+                background-color: tint( $Blue_Endeavour,15%);
             }
             .worktogether {
                 flex-grow: 2;
                 height: 27.5vw; //  max-width: 385px;
                 max-height: 315px;
-                background-color: cyan;
+                background-color: $Yellow_Apache;
             }
             .services {
                 flex-grow: 2;
-                background-color: $orange;
+                background-color: $Green_Hippie_Green;
                 max-height: 700px;
-                ; // width: 31.65vw;
+                //; // width: 31.65vw;
                 //max-width: 443.08px;
             }
         }
@@ -300,7 +340,7 @@ div#page-wrapper #content {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: #23a75d;
+    background-color:$Yellow_Apache;
     height: 60px;
     width: 60px;
     font-size: 38px;

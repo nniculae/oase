@@ -12,11 +12,13 @@
 
 get_header();
 
+dynamic_sidebar('aristonet_carousel'); 
+
 $container   = get_theme_mod('understrap_container_type');
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper front-page" id="page-wrapper">
 
 	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
@@ -24,17 +26,18 @@ $container   = get_theme_mod('understrap_container_type');
 
 			<main id="home-block-container">
 				<div class="hometop blocks">
-					<div class="about expanda">
-						About US
-					</div>
+					<a href="/info" class="about homeblock expanda">
+						<h1>Over <br><strong>Ons</strong></h1>
+						
+                    </a>
 					<div class="hometopright">
 						<!-- 2 -->
-						<div class="discover expanda">
-							DISCOVER
-						</div>
-						<div class="blog expanda">
-							BLOG
-						</div>
+						<a href="/activiteiten" class="discover homeblock expanda">
+							<h1>Onze <br><strong> Activiteiten</strong></h1>
+						</a>
+						<a href="/nieuws" class="blog homeblock expanda">
+							<h1>Laatste<br><strong> artikels</strong></h1>
+						</a>
 					</div>
 				</div>
 				<div class="offsetcontainer">
@@ -50,7 +53,7 @@ $container   = get_theme_mod('understrap_container_type');
 								</div>
 							</div>
 						</div>
-						<div class="services expanda">Our Services </div>
+						<div class="services homeblock expanda">Our Services </div>
 
 					</div>
 					<a href="#" class="to-top"><i class="fas fa-angle-up"></i></a>
