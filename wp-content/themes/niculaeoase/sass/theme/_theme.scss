@@ -219,11 +219,16 @@ div#page {
 #page-wrapper.front-page {
     padding-top: 0;
 }
-
-div#page-wrapper #content {
-    // background-color: $gray-200;
+.home #page-wrapper #content{
     margin-bottom: -60px; // margin-top: 60px;
     z-index: 5000;
+    // background-color:$Green_Turtle_Green;
+}
+div#page-wrapper #content {
+    // background-color: $gray-200;
+    // margin-bottom: -60px; // margin-top: 60px;
+    // z-index: 5000;
+    // background-color: red;
 }
 
 /* #endregion Vertical alignment   */

@@ -1,5 +1,11 @@
 /* #region Blocks Test */
 
+@media (max-width: 991px) {
+    .front-page .container {
+        max-width: 100%;
+    }
+}
+
 #home-block-container {
     color: $white;
     height: 100%;
@@ -21,26 +27,26 @@
         display: block;
     }
     .blocks {
-        display: flex;
+        // display: flex;
     }
     .homeblock {
         padding: 30px 3.5vw 85px;
     }
     .hometop {
         .about {
-            margin-bottom: -13.8%;
-            width: 31.65vw;
-            max-width: 443.08px;
+            // margin-bottom: -13.8%;
+            // width: 31.65vw;
+            // max-width: 443.08px;
             background-color: tint($Green_Hippie_Green, 12%);
         }
         .hometopright {
-            flex-grow: 2;
-            .discover {
+            // flex-grow: 2;
+            .activiteiten {
                 height: 27.5vw;
                 max-height: 385px;
                 background-color: tint($Yellow_Apache, 12%);
             }
-            .blog {
+            .nieuws {
                 height: 27.5vw;
                 max-height: 385px;
                 background-color: tint( $Blue_Endeavour, 15%);
@@ -49,16 +55,16 @@
     }
     .offsetcontainer {
         position: relative;
-        // z-index: 7000;
-        padding-left: 60px;
-        padding-right: 60px;
+        z-index: 7000; // padding-left: 60px;
+        // padding-right: 60px;
         .homebottom {
             .homebottomleft {
-                flex-grow: 2;
+                // flex-grow: 2;
                 .fotos {
                     height: 27.5vw; // max-width: 385px;
                     max-height: 385px;
-                    background-color: tint( $Blue_Endeavour, 15%);
+                    // background-color: tint( $Blue_Endeavour, 15%);
+                    background-color: tint( $Brown_Seal_Brown, 15%); 
                 }
                 .sponsors {
                     height: 27.5vw;
@@ -67,20 +73,20 @@
                 }
             }
             .contact {
-                width: 31.65vw;
-                max-width: 443.08px;
+                // width: 31.65vw;
+                // max-width: 443.08px;
                 background-color: $Green_Hippie_Green;
             }
         }
     }
     .expanda:hover {
-        transform: scale(1.02);
-        transition: all .2s;
-        z-index: 1;
-        box-shadow: 0 0 22px -3px rgba(0, 0, 0, .75);
+        // transform: scale(1.02);
+        // transition: all .2s;
+        // z-index: 1;
+        // box-shadow: 0 0 22px -3px rgba(0, 0, 0, .75);
     }
     .expanda {
-        transition: all .2s;
+        // transition: all .2s;
         cursor: pointer;
     }
     .to-top {
@@ -96,6 +102,107 @@
         display: block;
         -ms-flex-item-align: end;
         align-self: flex-end
+    }
+}
+
+@media(min-width:$lg) {
+    #home-block-container {
+        color: $white;
+        height: 100%;
+        width: 100%;
+        h1 {
+            font-size: 2.6em;
+            line-height: .9em;
+            font-weight: 200;
+            text-transform: uppercase;
+            strong {
+                font-weight: 600;
+                line-height: .8em;
+                font-size: 1.4em;
+            }
+        }
+        a {
+            color: $white;
+            text-decoration: none;
+            display: block;
+        }
+        .blocks {
+            display: flex;
+        }
+        .homeblock {
+            padding: 30px 3.5vw 85px;
+        }
+        .hometop {
+            .about {
+                margin-bottom: -13.8%;
+                width: 31.65vw;
+                max-width: 443.08px;
+                background-color: tint($Green_Hippie_Green, 12%);
+            }
+            .hometopright {
+                flex-grow: 2;
+                .activiteiten {
+                    height: 27.5vw;
+                    max-height: 385px;
+                    background-color: tint($Yellow_Apache, 12%);
+                }
+                .nieuws {
+                    height: 27.5vw;
+                    max-height: 385px;
+                    background-color: tint( $Blue_Endeavour, 15%);
+                }
+            }
+        }
+        .offsetcontainer {
+            position: relative;
+            z-index: 7000;
+            padding-left: 60px;
+            padding-right: 60px;
+            .homebottom {
+                .homebottomleft {
+                    flex-grow: 2;
+                    .fotos {
+                        height: 27.5vw; // max-width: 385px;
+                        max-height: 385px;
+                        background-color: tint( $Blue_Endeavour, 15%);
+                    }
+                    .sponsors {
+                        height: 27.5vw;
+                        max-height: 385px;
+                        background-color: $Yellow_Apache;
+                    }
+                }
+                .contact {
+                    width: 31.65vw;
+                    max-width: 443.08px;
+                    background-color: $Green_Hippie_Green;
+                }
+            }
+        }
+        .expanda:hover {
+            transform: scale(1.02);
+            transition: all .2s;
+            z-index: 1;
+            box-shadow: 0 0 22px -3px rgba(0, 0, 0, .75);
+        }
+        .expanda {
+            transition: all .2s;
+            cursor: pointer;
+        }
+        .to-top {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: $Yellow_Apache;
+            height: 60px;
+            width: 60px;
+            font-size: 38px;
+            text-align: center;
+            color: #fff;
+            display: block;
+            -ms-flex-item-align: end;
+            align-self: flex-end
+        }
     }
 }
 

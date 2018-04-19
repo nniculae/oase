@@ -35,13 +35,13 @@ $container   = get_theme_mod('understrap_container_type');
 						</a>
 						<div class="hometopright">
 							<!-- 2 -->
-							<a href="/activiteiten" class="discover homeblock expanda">
+							<a href="/activiteiten" class="activiteiten homeblock expanda">
 								<h1>Onze
 									<br>
 									<strong> Activiteiten</strong>
 								</h1>
 							</a>
-							<a href="/nieuws" class="blog homeblock expanda">
+							<a href="/nieuws" class="nieuws homeblock expanda">
 								<h1>Laatste
 									<br>
 									<strong> artikels</strong>
@@ -53,7 +53,7 @@ $container   = get_theme_mod('understrap_container_type');
 						<div class="homebottom blocks">
 							<div class="homebottomleft">
 
-								<a href="/info" class="fotos homeblock expanda">
+								<a href="/fotos" class="fotos homeblock expanda">
 									<h1>Onze
 										<br>
 										<strong>Fotos</strong>
