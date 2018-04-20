@@ -146,17 +146,35 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
+    // pointer-events: none;
+}
+.card .read-more{
+    // pointer-events: auto;
+}
+
+.card {
+    cursor: pointer;
+    overflow: hidden;
+    .card-img-top {
+        transition: all .2s;
+    }
+    &:hover .card-img-top {
+        transform: scale(1.1);
+        transition: all .2s;
+    }
+    &:hover a {
+         color: $secondary;
+    }
 }
 
 /* #region Widgets */
 
-#right-sidebar{
-    background: tint(#f8f9fa, 70%);
-    // box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
-} 
-#primary{
-    background: tint(#f8f9fa, 70%);
-    // box-shadow: 0 0 22px -3px rgba(0,0,0,.75);
+#right-sidebar {
+    background: tint(#f8f9fa, 70%); // box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
+}
+
+#primary {
+    background: tint(#f8f9fa, 70%); // box-shadow: 0 0 22px -3px rgba(0,0,0,.75);
     // box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
 }
 
@@ -172,10 +190,7 @@ body {
     margin-bottom: 30px;
 }
 
-
-
 #right-sidebar .widget_recent_entries {
-    
     ul {
         border: 1px dashed rgba(0, 0, 0, .125);
         padding: 10px 22px;
@@ -188,36 +203,34 @@ body {
 
 .em-calnav {
     color: tint($primary, 50%);
-    &:hover{
+    &:hover {
         color: $secondary;
     }
 }
+
 .month_name {
-    color: tint($secondary,20%);
-   
+    color: tint($secondary, 20%);
 }
 
 .em-calendar {
     width: 100%;
     border: 1px dashed rgba(0, 0, 0, .125);
 }
-.eventless-today{
-    background-color:tint($secondary, 30%) !important;
+
+.eventless-today {
+    background-color: tint($secondary, 30%) !important;
     color: $white !important;
 }
 
-table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
+table.em-calendar td.eventful a,
+table.em-calendar td.eventful-today a {
     font-weight: 600;
     color: $primary;
-    &:hover{
+    &:hover {
         color: $secondary;
     }
     font-style: bold;
 }
-
-
-
-
 
 /* #endregion Events Calendar */
 
@@ -270,11 +283,10 @@ table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
     min-height: 100vh;
 }
 
-#page-wrapper {
+#page-wrapper, #single-wrapper {
     flex: 1; // 
     height: 100%;
     display: flex;
-    
 }
 
 #page-wrapper.front-page {
@@ -286,20 +298,21 @@ table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
     z-index: 5000; // background-color:$Green_Turtle_Green;
 }
 
-.wrapper.not-front #content, .wrapper.not-front #content{
-    // background-color: $gray-200;
-    // margin-bottom: -60px; // margin-top: 60px;
-    // z-index: 5000;
-    // background-color: red;
-    box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
+.wrapper.not-front #content,
+.wrapper.not-front #content, #single-wrapper.wrapper #content {
+   
+    box-shadow: 0 0 12px -3px rgba(0, 0, 0, .55);
     padding: 30px;
 }
 
 /* #endregion Vertical alignment   */
 
-
-.btn-outline-primary:hover, .wpcf7 input:hover[type=submit] {
+.btn-outline-primary:hover,
+.wpcf7 input:hover[type=submit] {
     color: #fff;
     background-color: $secondary;
-    border-color:$secondary;
+    border-color: $secondary;
 }
+
+// location
+.location .posted-on{display: none;}
