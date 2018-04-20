@@ -6,6 +6,7 @@ NavBar
 Color bars
 Angled header
 */
+
 /* #region body */
 
 body {
@@ -18,7 +19,9 @@ body {
         max-width: 1400px;
     }
 }
+
 /* #endregion body */
+
 /* #region Navbar */
 
 #navbarNavDropdown {
@@ -145,19 +148,76 @@ body {
     right: 0;
 }
 
+/* #region Widgets */
+
+#right-sidebar{
+    background: tint(#f8f9fa, 70%);
+    // box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
+} 
+#primary{
+    background: tint(#f8f9fa, 70%);
+    // box-shadow: 0 0 22px -3px rgba(0,0,0,.75);
+    // box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
+}
+
+#right-sidebar .widget {
+    // margin-top: 38px;
+    li {
+        list-style-type: square;
+        color: tint($primary, 50%); //#d6d6d6;
+        &:hover {
+            color: $secondary;
+        }
+    }
+    margin-bottom: 30px;
+}
+
+
+
+#right-sidebar .widget_recent_entries {
+    
+    ul {
+        border: 1px dashed rgba(0, 0, 0, .125);
+        padding: 10px 22px;
+    }
+}
+
+/* #endregion Widgets */
+
 /* #region Events Calendar */
 
 .em-calnav {
-    color: $secondary;
+    color: tint($primary, 50%);
+    &:hover{
+        color: $secondary;
+    }
+}
+.month_name {
+    color: tint($secondary,20%);
+   
 }
 
 .em-calendar {
     width: 100%;
+    border: 1px dashed rgba(0, 0, 0, .125);
+}
+.eventless-today{
+    background-color:tint($secondary, 30%) !important;
+    color: $white !important;
 }
 
-.month_name {
-    color: $secondary;
+table.em-calendar td.eventful a, table.em-calendar td.eventful-today a {
+    font-weight: 600;
+    color: $primary;
+    &:hover{
+        color: $secondary;
+    }
+    font-style: bold;
 }
+
+
+
+
 
 /* #endregion Events Calendar */
 
@@ -189,22 +249,22 @@ body {
 
 /* #region Sponsors */
 
-div#container-sponsors {
-    display: flex;
-    flex-wrap: wrap;
-}
+.sponsor-cards {}
 
-#container-sponsors>* {
-    width: 50%;
-    min-width: 300px;
-    padding: 10px;
-}
-
+// div#container-sponsors {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+// #container-sponsors>* {
+//     width: 50%;
+//     min-width: 300px;
+//     padding: 10px;
+// }
 /* #endregion Sponsors */
 
 /* #region Vertical alignment   */
 
-div#page {
+#page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -214,124 +274,32 @@ div#page {
     flex: 1; // 
     height: 100%;
     display: flex;
+    
 }
 
 #page-wrapper.front-page {
     padding-top: 0;
 }
-.home #page-wrapper #content{
+
+.home #page-wrapper #content {
     margin-bottom: -60px; // margin-top: 60px;
-    z-index: 5000;
-    // background-color:$Green_Turtle_Green;
+    z-index: 5000; // background-color:$Green_Turtle_Green;
 }
-div#page-wrapper #content {
+
+.wrapper.not-front #content, .wrapper.not-front #content{
     // background-color: $gray-200;
     // margin-bottom: -60px; // margin-top: 60px;
     // z-index: 5000;
     // background-color: red;
+    box-shadow: 0 0 12px -3px rgba(0,0,0,.55);
+    padding: 30px;
 }
 
 /* #endregion Vertical alignment   */
 
-/* #region Blocks Test */
 
-// #home-block-container {
-//     color: $white;
-//     height: 100%;
-//     width: 100%;
-//     h1 {
-//         font-size: 2.6em;
-//         line-height: .9em;
-//         font-weight: 200;
-//         text-transform: uppercase;
-//         strong {
-//             font-weight: 600;
-//             line-height: .8em;
-//             font-size: 1.4em;
-//         }
-//     }
-//     a {
-//         color: $white;
-//         text-decoration: none;
-//         display: block;
-//     }
-//     .blocks {
-//         display: flex;
-//     }
-//     .homeblock {
-//         padding: 30px 3.5vw 85px;
-//     }
-//     .hometop {
-//         .about {
-//             margin-bottom: -13.8%;
-//             width: 31.65vw;
-//             max-width: 443.08px;
-//             background-color: tint($Green_Hippie_Green, 12%);
-//         }
-//         .hometopright {
-//             flex-grow: 2;
-//             .discover {
-//                 height: 27.5vw;
-//                 max-height: 385px;
-//                 background-color: tint($Yellow_Apache, 12%);
-//             }
-//             .blog {
-//                 height: 27.5vw;
-//                 max-height: 385px;
-//                 background-color: tint( $Blue_Endeavour, 15%);
-//             }
-//         }
-//     }
-//     .offsetcontainer {
-//         position: relative;
-//         z-index: 7000;
-//         padding-left: 60px;
-//         padding-right: 60px;
-//         .homebottom {
-//             .homebottomleft {
-//                 flex-grow: 2;
-//                 .fotos {
-//                     height: 27.5vw; // max-width: 385px;
-//                     max-height: 385px;
-//                     background-color: tint( $Blue_Endeavour, 15%);
-//                 }
-//                 .sponsors {
-//                     height: 27.5vw;
-//                     max-height: 385px;
-//                     background-color: $Yellow_Apache;
-//                 }
-//             }
-//             .contact {
-//                 width: 31.65vw;
-//                 max-width: 443.08px;
-//                 background-color: $Green_Hippie_Green;
-//             }
-//         }
-//     }
-//     .expanda:hover {
-//         transform: scale(1.02);
-//         transition: all .2s;
-//         z-index: 1;
-//         box-shadow: 0 0 22px -3px rgba(0, 0, 0, .75);
-//     }
-//     .expanda {
-//         transition: all .2s;
-//         cursor: pointer;
-//     }
-//     .to-top {
-//         position: absolute;
-//         bottom: 0;
-//         right: 0;
-//         background-color: $Yellow_Apache;
-//         height: 60px;
-//         width: 60px;
-//         font-size: 38px;
-//         text-align: center;
-//         color: #fff;
-//         display: block;
-//         -ms-flex-item-align: end;
-//         align-self: flex-end
-//     }
-// }
-
-/* #endregion Blocks Test */
+.btn-outline-primary:hover, .wpcf7 input:hover[type=submit] {
+    color: #fff;
+    background-color: $secondary;
+    border-color:$secondary;
+}
