@@ -145,10 +145,10 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
-    // pointer-events: none;
+    right: 0; // pointer-events: none;
 }
-.card .read-more{
+
+.card .read-more {
     // pointer-events: auto;
 }
 
@@ -163,7 +163,7 @@ body {
         transition: all .2s;
     }
     &:hover a {
-         color: $secondary;
+        color: $secondary;
     }
 }
 
@@ -283,7 +283,8 @@ table.em-calendar td.eventful-today a {
     min-height: 100vh;
 }
 
-#page-wrapper, #single-wrapper {
+#page-wrapper,
+#single-wrapper {
     flex: 1; // 
     height: 100%;
     display: flex;
@@ -299,8 +300,8 @@ table.em-calendar td.eventful-today a {
 }
 
 .wrapper.not-front #content,
-.wrapper.not-front #content, #single-wrapper.wrapper #content {
-   
+.wrapper.not-front #content,
+#single-wrapper.wrapper #content {
     box-shadow: 0 0 12px -3px rgba(0, 0, 0, .55);
     padding: 30px;
 }
@@ -315,4 +316,27 @@ table.em-calendar td.eventful-today a {
 }
 
 // location
-.location .posted-on{display: none;}
+.location .posted-on {
+    display: none;
+}
+
+/* #region Google map */
+
+.oase-map {
+
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden; 
+    margin-bottom: 50px;
+}
+
+.oase-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* #endregion Google map */
