@@ -57,9 +57,13 @@ $container   = get_theme_mod('understrap_container_type');
 									<br>
 									<strong> Activiteiten</strong>
 								</h1>
+								<div class="align-self-center under-constrcution">
+									<p>Website onder constructie</p>
+									<p>Op dit moment wordt er achter de schermen hard gewerkt.</p>
+								</div>
 							</a>
-							<!-- <a href="/nieuws" class="nieuws homeblock expanda" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/onze_activiteiten.jpg');background-size:100%;"> -->
-							<a href="/nieuws" class="nieuws homeblock expanda">
+							<a href="/nieuws" class="nieuws homeblock expanda background-nieuws" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/onze_activiteiten.jpg');background-size:100%;">
+							<!-- <a href="/nieuws" class="nieuws homeblock expanda"> -->
 								<span class="fa-icons">
 									<i class="fa fa-newspaper-o"></i>
 								</span>
@@ -75,9 +79,8 @@ $container   = get_theme_mod('understrap_container_type');
 						<div class="homebottom blocks">
 							<div class="homebottomleft">
 
-<!-- <div class="background" height="auto" style="background-image: url('https://wp9c030ce2b9b7.blob.core.windows.net/wp-media/2018/03/ada-part-2_v1.0.jpg');">
-</div> -->
-								<a href="/fotos" class="fotos homeblock expanda background" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world-1024x654.jpg');">
+
+								<a href="/fotos" class="fotos homeblock expanda background-fotos" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world-1024x654.jpg');">
 
 								
 									<span class="fa-icons">
@@ -88,7 +91,7 @@ $container   = get_theme_mod('understrap_container_type');
 										<strong>Fotos</strong>
 									</h1>
 									
-									<!-- http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world.jpg -->
+									
 
 									
 									<?php 
@@ -113,7 +116,7 @@ $container   = get_theme_mod('understrap_container_type');
 
 							</div>
 
-							<a href="/info" class="contact homeblock expanda" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/cover_fb.jpg');">
+							<a href="/info" class="contact homeblock expanda">
 								<span class="fa-icons">
 									<i class="fa fa-envelope-square"></i>
 								</span>

@@ -64,7 +64,10 @@
                     // height: 27.5vw; // max-width: 385px;
                     // max-height: 385px;
                     // background-color: tint( $Blue_Endeavour, 15%);
-                    background-color: tint( $Brown_Seal_Brown, 15%); 
+                    // background-color: tint( $Brown_Seal_Brown, 15%); 
+                    // #38a63c
+                    // background-color: #38a63c;
+                    background-color: tint( $secondary, 15%);
                 }
                 .sponsors {
                     // height: 27.5vw;
@@ -140,22 +143,48 @@
                 background-color: tint($Green_Hippie_Green, 12%);
             }
             .hometopright {
+                pointer-events: none;
+                &:hover{
+                    z-index: 777777;
+                }
                 flex-grow: 2;
+
                 .activiteiten {
                     height: 27.5vw;
                     max-height: 385px;
                     background-color: tint($Yellow_Apache, 12%);
+                    pointer-events: auto;
                 }
                 .nieuws {
                     height: 27.5vw;
                     max-height: 385px;
                     background-color: tint( $Blue_Endeavour, 15%);
+                    pointer-events: auto;
+                    
+
+                    &:hover{
+                        background-blend-mode: hue;
+                    }
                 }
             }
+
+            // .hometopright{
+            //     pointer-events: none;
+            //     &:hover{
+            //         z-index: 777777;
+            //     }
+            // }
+            // .nieuws{
+            //     pointer-events: auto;
+            // }
+            // .activiteiten{
+            //     pointer-events: auto;
+            // }
+
         }
         .offsetcontainer {
             position: relative;
-            z-index: 7000;
+            // z-index: 7000;
             padding-left: 60px;
             padding-right: 60px;
             .homebottom {
@@ -164,7 +193,11 @@
                     .fotos {
                         height: 27.5vw; // max-width: 385px;
                         max-height: 385px;
-                        background-color: tint( $Blue_Endeavour, 15%);
+                        // background-color: tint( $Blue_Endeavour, 15%);
+                        background-color: tint( $secondary, 15%);
+                        &:hover{
+                            background-blend-mode: hue;
+                        }
                     }
                     .sponsors {
                         height: 27.5vw;
@@ -229,4 +262,39 @@
     i{
         font-size: 2em;
     }
+}
+
+.under-constrcution{
+    padding-top: 10px;;
+    p{
+        // line-height: 0.7em;
+        font-size: 1.1em;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .hometopright {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+   
+}
+.background-nieuws{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: saturation;
+   
+}
+
+.background-fotos{
+   
+    background-blend-mode: saturation;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; 
+}
+ a.homeblock:hover .fa{
+    // color: red;
 }
