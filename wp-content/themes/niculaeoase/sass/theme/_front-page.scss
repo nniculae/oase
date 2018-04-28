@@ -42,13 +42,13 @@
         .hometopright {
             // flex-grow: 2;
             .activiteiten {
-                height: 27.5vw;
-                max-height: 385px;
+                // height: 27.5vw;
+                // max-height: 385px;
                 background-color: tint($Yellow_Apache, 12%);
             }
             .nieuws {
-                height: 27.5vw;
-                max-height: 385px;
+                // height: 27.5vw;
+                // max-height: 385px;
                 background-color: tint( $Blue_Endeavour, 15%);
             }
         }
@@ -61,14 +61,14 @@
             .homebottomleft {
                 // flex-grow: 2;
                 .fotos {
-                    height: 27.5vw; // max-width: 385px;
-                    max-height: 385px;
+                    // height: 27.5vw; // max-width: 385px;
+                    // max-height: 385px;
                     // background-color: tint( $Blue_Endeavour, 15%);
                     background-color: tint( $Brown_Seal_Brown, 15%); 
                 }
                 .sponsors {
-                    height: 27.5vw;
-                    max-height: 385px;
+                    // height: 27.5vw;
+                    // max-height: 385px;
                     background-color: $Yellow_Apache;
                 }
             }
@@ -215,4 +215,18 @@
     padding-left: 10px;
     padding-bottom: 20px;
     font-size: 30px;
+    text-align: right;
+    display: block;
 } 
+
+.inner{
+    display: flex;
+    margin-top: 50px;
+    ul,li{
+        list-style-type: none;
+        font-size: 1.1em;
+    }
+    i{
+        font-size: 2em;
+    }
+}

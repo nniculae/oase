@@ -26,27 +26,44 @@ $container   = get_theme_mod('understrap_container_type');
 
 				<main id="home-block-container">
 					<div class="hometop blocks">
-						
+
 						<a href="/info" class="about homeblock expanda">
-						<span class="fa-icons"><i class="fa fa-pagelines"></i></span>
+							<span class="fa-icons">
+								<i class="fa fa-pagelines"></i>
+							</span>
 							<h1>Over
 								<br>
 								<strong>Ons</strong>
 							</h1>
-
+							<div class="inner">
+							<i class="fa fa-chevron-right align-self-center"></i>
+								<ul class="align-self-center">
+									<li>Opgericht in 2001</li>
+									<li>Inloophuis</li>
+									<li>Gevestigd in Goes</li>
+									<li>Gezellig</li>
+									<li>Mensen zijn belangrijk</li>
+								</ul>
+							</div>
 						</a>
 						<div class="hometopright">
 							<!-- 2 -->
+							<!-- onze_activiteiten-768x576.jpg -->
 							<a href="/activiteiten" class="activiteiten homeblock expanda">
-							<span class="fa-icons"><i class="fa fa-meetup"></i></span>
+								<span class="fa-icons">
+									<i class="fa fa-meetup"></i>
+								</span>
 								<h1>Onze
 									<br>
 									<strong> Activiteiten</strong>
 								</h1>
 							</a>
+							<!-- <a href="/nieuws" class="nieuws homeblock expanda" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/onze_activiteiten.jpg');background-size:100%;"> -->
 							<a href="/nieuws" class="nieuws homeblock expanda">
-							<span class="fa-icons"><i class="fa fa-newspaper-o"></i></span>
-							
+								<span class="fa-icons">
+									<i class="fa fa-newspaper-o"></i>
+								</span>
+
 								<h1>Laatste
 									<br>
 									<strong> artikels</strong>
@@ -58,15 +75,36 @@ $container   = get_theme_mod('understrap_container_type');
 						<div class="homebottom blocks">
 							<div class="homebottomleft">
 
-								<a href="/fotos" class="fotos homeblock expanda">
-								<span class="fa-icons"><i class="fa fa-camera"></i></span>
+<!-- <div class="background" height="auto" style="background-image: url('https://wp9c030ce2b9b7.blob.core.windows.net/wp-media/2018/03/ada-part-2_v1.0.jpg');">
+</div> -->
+								<a href="/fotos" class="fotos homeblock expanda background" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world-1024x654.jpg');">
+
+								
+									<span class="fa-icons">
+										<i class="fa fa-camera"></i>
+									</span>
 									<h1>Onze
 										<br>
 										<strong>Fotos</strong>
 									</h1>
+									
+									<!-- http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world.jpg -->
+
+									
+									<?php 
+											//$testao = attachment_url_to_postid('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world.jpg');
+											//var_dump($testao);
+											//$tn =wp_get_attachment_image_url($testao,'large');
+											//var_dump($tn);
+											//echo '<img src="' . $tn . '" alt="">';
+									?>
+									
+
 								</a>
 								<a href="/sponsors" class="sponsors homeblock expanda">
-								<span class="fa-icons"><i class="fa fa-bullhorn"></i></span>
+									<span class="fa-icons">
+										<i class="fa fa-bullhorn"></i>
+									</span>
 									<h1>Onze
 										<br>
 										<strong>Sponsors</strong>
@@ -74,11 +112,14 @@ $container   = get_theme_mod('understrap_container_type');
 								</a>
 
 							</div>
-							
-							<a href="/info" class="contact homeblock expanda">
-							<span class="fa-icons"><i class="fa fa-envelope-square"></i></span>
+
+							<a href="/info" class="contact homeblock expanda" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/cover_fb.jpg');">
+								<span class="fa-icons">
+									<i class="fa fa-envelope-square"></i>
+								</span>
 								<h1>Contact
-									<br><strong>Ons</strong>
+									<br>
+									<strong>Ons</strong>
 								</h1>
 
 							</a>
