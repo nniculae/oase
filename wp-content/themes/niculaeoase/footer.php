@@ -122,7 +122,7 @@ jq2(function($) {
   // Handler for .ready() called.
 
   //Check to see if the window is top if not then display button
- 
+  $('.to-top').fadeOut();
   $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
             $('.to-top').fadeIn();

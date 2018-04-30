@@ -62,7 +62,7 @@ $container   = get_theme_mod('understrap_container_type');
 									<p>Op dit moment wordt er achter de schermen hard gewerkt.</p>
 								</div>
 							</a>
-							<a href="/nieuws" class="nieuws homeblock expanda background-nieuws" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/onze_activiteiten.jpg');background-size:100%;">
+							<a href="/nieuws" class="nieuws homeblock expanda background-nieuws" style="background-image: url('https://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/onze_activiteiten.jpg');background-size:100%;">
 							<!-- <a href="/nieuws" class="nieuws homeblock expanda"> -->
 								<span class="fa-icons">
 									<i class="fa fa-newspaper-o"></i>
@@ -80,7 +80,7 @@ $container   = get_theme_mod('understrap_container_type');
 							<div class="homebottomleft">
 
 
-								<a href="/fotos" class="fotos homeblock expanda background-fotos" style="background-image: url('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world-1024x654.jpg');">
+								<a href="/fotos" class="fotos homeblock expanda background-fotos" style="background-image: url('https://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world-1024x654.jpg');">
 
 								
 									<span class="fa-icons">
@@ -95,7 +95,7 @@ $container   = get_theme_mod('understrap_container_type');
 
 									
 									<?php 
-											//$testao = attachment_url_to_postid('http://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world.jpg');
+											//$testao = attachment_url_to_postid('https://www.inloophuisoasegoes.nl.local/wp-content/uploads/2018/04/light_the_world.jpg');
 											//var_dump($testao);
 											//$tn =wp_get_attachment_image_url($testao,'large');
 											//var_dump($tn);
