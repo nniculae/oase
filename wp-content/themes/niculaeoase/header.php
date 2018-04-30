@@ -52,20 +52,27 @@ $container = get_theme_mod('understrap_container_type');
     ?>
 
 						<?php if (is_front_page() && is_home()) : ?>
-
+						
 						<h1 class="navbar-brand mb-0">
-							<a rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
+							<a  rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" 
 							    itemprop="url">
 								<?php bloginfo('name'); ?>
 							</a>
 						</h1>
 
 						<?php else : ?>
-
-						<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
+								<?php if (is_front_page() ) : ?>
+								<a class="navbar-brand current-menu-item" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
 						    itemprop="url">
 							<?php bloginfo('name'); ?>
 						</a>
+								<?php else : ?>
+								<a class="navbar-brand" rel="home" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
+						    itemprop="url">
+							<?php bloginfo('name'); ?>
+						</a>
+								<?php endif; ?>
+						
 
 						<?php endif; ?>
 

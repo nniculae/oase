@@ -1,63 +1,80 @@
-$navbar-oase-color:                $primary;
-$navbar-oase-hover-color:          $secondary;
-$navbar-oase-active-color:         $navbar-oase-hover-color;
-$navbar-oase-disabled-color:       rgba($black, .3) !default;
-$navbar-oase-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-oase-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-oase-toggler-border-color: rgba($black, .1) !default;
-
-
+$navbar-oase-color : $primary;
+$navbar-oase-hover-color : $secondary;
+$navbar-oase-active-color : $navbar-oase-hover-color;
+$navbar-oase-disabled-color : rgba($black, .3) !default;
+$navbar-oase-toggler-icon-bg : str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-oase-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"),
+"#",
+"%23") !default;
+$navbar-oase-toggler-border-color: rgba($black,
+.1) !default;
 // Navbar themes
 //
 // Styles for switching between navbars with oase or dark background.
-
 // Dark links against a oase background
 .navbar-oase {
     .navbar-brand {
-      color: $navbar-oase-active-color;
-  
-      @include hover-focus {
-        color: $navbar-oase-active-color;
-      }
+        // color: $navbar-oase-active-color;
+        @include hover-focus {
+            color: $navbar-oase-active-color;
+        }
+
+        
+        font-weight: 700;
+        font-size: 1.4em;
+        
     }
-  
+    .current-menu-item{
+        color: $navbar-oase-active-color;
+    }
+    @media (max-width: 767px) {
+        #navbarNavDropdown a {
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+    }
+    #navbarNavDropdown {
+        // horzintontally align
+        justify-content: flex-end;
+        a {
+            font-weight: 700;
+        }
+    }
     .navbar-nav {
-      .nav-link {
-        color: $navbar-oase-color;
-  
-        @include hover-focus {
-          color: $navbar-oase-hover-color;
+        @media (max-width: 767px) {
+            li:first-child {
+                display: none;
+            }
         }
-  
-        &.disabled {
-          color: $navbar-oase-disabled-color;
+        .nav-link {
+            color: $navbar-oase-color;
+            @include hover-focus {
+                color: $navbar-oase-hover-color;
+            }
+            &.disabled {
+                color: $navbar-oase-disabled-color;
+            }
         }
-      }
-  
-      .show > .nav-link,
-      .active > .nav-link,
-      .nav-link.show,
-      .nav-link.active {
-        color: $navbar-oase-active-color;
-      }
+        .show>.nav-link,
+        .active>.nav-link,
+        .nav-link.show,
+        .nav-link.active {
+            color: $navbar-oase-active-color;
+        }
     }
-  
     .navbar-toggler {
-      color: $navbar-oase-color;
-      border-color: $navbar-oase-toggler-border-color;
+        color: $navbar-oase-color;
+        border-color: $navbar-oase-toggler-border-color;
     }
-  
     .navbar-toggler-icon {
-      background-image: $navbar-oase-toggler-icon-bg;
+        background-image: $navbar-oase-toggler-icon-bg;
     }
-  
     .navbar-text {
-      color: $navbar-oase-color;
-      a {
-        color: $navbar-oase-active-color;
-  
-        @include hover-focus {
-          color: $navbar-oase-active-color;
+        color: $navbar-oase-color;
+        a {
+            color: $navbar-oase-active-color;
+            @include hover-focus {
+                color: $navbar-oase-active-color;
+            }
         }
-      }
     }
-  }
+}

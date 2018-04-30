@@ -24,13 +24,7 @@ body {
 
 /* #region Navbar */
 
-#navbarNavDropdown {
-    // horzintontally align
-    justify-content: flex-end;
-    a {
-        font-weight: 700;
-    }
-}
+
 
 /* #endregion  Navbar */
 
@@ -42,9 +36,11 @@ body {
     >div {
         height: 6px;
         width: 20%;
+        
     }
     .cb1 {
         background-color: $Blue_Cornflower_Blue;
+       
     }
     .cb2 {
         background-color: $Blue_Botticelli;
@@ -58,6 +54,7 @@ body {
     .cb5 {
         background-color: $Yellow_Apache;
     }
+    
 }
 
 /* #endregion  Color bars */
@@ -108,10 +105,54 @@ body {
     }
     .row {
         margin: 0;
-        .col-md-12 {
+        .col-sm-12 {
             padding: 0;
         }
     }
+
+    ul,li{
+        list-style: none;
+        font-size: 0.9em;
+    }
+    .footer-one{
+        text-align: left;
+        padding: 0;
+        .facebook{
+           
+            text-align: center;
+            a:hover i{
+                color: tint($secondary,20%);
+            }
+        }
+        @media(max-width:767px){
+            .facebook{
+                padding: 2em;
+               
+            }
+        }
+       
+
+       
+
+    }
+    .fa-facebook{
+        font-size: 8em;
+        color:$white;
+    }
+    
+    @media(min-width:$lg){
+        .address{
+            // border-right: 1px solid shade($Blue_Smalt_Blue, 10%);
+            text-align: right;
+            padding-right:5em !important;
+        }
+        .openingstijden{
+            // border-left: 1px solid shade($Blue_Smalt_Blue, 10%);
+            text-align: left;
+            padding-left:5em !important;
+        }
+    }
+    
 }
 
 .site-footer {
@@ -120,8 +161,16 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: white;
+    // opacity: 0.9;
+    // animation: pulse 5.6s 1.2s infinite;
 }
 
+.site-info{
+    padding-top: 2em; 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    text-shadow: 1px 1px 0px black !important;
+}
 /* #endregion Footer */
 
 /* #region Widgets */
