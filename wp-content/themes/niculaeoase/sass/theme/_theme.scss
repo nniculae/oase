@@ -119,7 +119,7 @@ body {
         padding: 0;
         .facebook{
            
-            text-align: center;
+            // text-align: left;
             a:hover i{
                 color: tint($secondary,20%);
             }
@@ -143,12 +143,12 @@ body {
     @media(min-width:$lg){
         .address{
             // border-right: 1px solid shade($Blue_Smalt_Blue, 10%);
-            text-align: right;
+            // text-align: right;
             padding-right:5em !important;
         }
         .openingstijden{
             // border-left: 1px solid shade($Blue_Smalt_Blue, 10%);
-            text-align: left;
+            // text-align: left;
             padding-left:5em !important;
         }
     }
@@ -166,10 +166,15 @@ body {
 }
 
 .site-info{
-    padding-top: 2em; 
+    padding-top: 3em !important; 
+    // padding-right:0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     text-shadow: 1px 1px 0px black !important;
+
+
+
+
 }
 /* #endregion Footer */
 
@@ -392,4 +397,19 @@ table.em-calendar td.eventful-today a {
 // hide time
 time.updated{
     display: none;
+}
+
+
+.to-top.not-home {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: $Yellow_Apache;
+    height: 60px;
+    width: 60px;
+    font-size: 38px;
+    text-align: center;
+    color: #fff;
+    display: block;
+   
 }

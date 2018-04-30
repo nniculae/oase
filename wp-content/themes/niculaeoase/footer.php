@@ -79,12 +79,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 
 						<div class="container">
-
-							<div class="site-info">
+							<div class="row">
+								<div class="col-sm-12 site-info">
+							<!-- <div class="site-info"> -->
 
 								<h6>Designed and developed by Niculae Niculae. All rights reserved. </h6>
-							</div>
+							<!-- </div> -->
 							<!-- .site-info -->
+							</div>
+							</div>
 						</div>
 
 					</footer>
@@ -98,7 +101,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		</div>
 		<!-- container end -->
-
+		
 	</div>
 	<!-- wrapper end -->
 
@@ -107,6 +110,38 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<?php wp_footer(); ?>
 
+<?php if (!is_front_page() ) : ?>
+<a href="#" class="to-top not-home">	<i class="fa fa-angle-up"></i></a>
+<?php endif; ?>
+
+	<script>
+
+jq2 = jQuery.noConflict();
+
+jq2(function($) {
+  // Handler for .ready() called.
+
+  //Check to see if the window is top if not then display button
+ 
+  $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.to-top').fadeIn();
+        } else {
+            $('.to-top').fadeOut();
+        }
+    });
+
+    //Click event to scroll to top
+    $('.to-top').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+
+});
+
+	
+	</script>
 	</body>
 
 	</html>

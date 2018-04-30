@@ -108,6 +108,8 @@
         display: block;
         -ms-flex-item-align: end;
         align-self: flex-end
+
+        
     }
 }
 
@@ -225,25 +227,31 @@
             transition: all .2s;
             cursor: pointer;
         }
-        .to-top {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background-color: $Yellow_Apache;
-            height: 60px;
-            width: 60px;
-            font-size: 38px;
-            text-align: center;
-            color: #fff;
-            display: block;
-            -ms-flex-item-align: end;
-            align-self: flex-end
-        }
+        
     }
 }
 
 /* #endregion Blocks Test */
 
+.to-top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // background-color: $Yellow_Apache;
+    height: 60px;
+    width: 60px;
+    font-size: 38px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+
+    &:hover{
+        background-color: $secondary !important;
+    }
+  
+}
 
 
 // icons
