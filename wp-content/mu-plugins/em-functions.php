@@ -68,7 +68,7 @@ function em_paginate($link, $total, $limit, $page=1, $data=array()){
 		    $string .= ($page < $maxPages) ? '<li class="page-item"><a class="next page-numbers page-link" href="'.str_replace($placeholder,$page+1,$link).'" title="'.($page+1).'">&gt;</a></li> ' :' ' ;
 		    $string .= ($i-1 < $maxPages) ? '<li class="page-item"> <a class="next page-numbers page-link" href="'.str_replace($placeholder,$maxPages,$link).'" title="'.$maxPages.'">&gt;&gt;</a></li> ' : ' ';
 		//Return the string
-		    return apply_filters('em_paginate', '<ul class="pagination justify-content-center" '.$data_atts.'>'.$string.'</ul>');
+		    return apply_filters('em_paginate', '<div class="col-sm-12"><ul class="pagination" '.$data_atts.'>'.$string.'</ul></div>');
 	}
 }
 }

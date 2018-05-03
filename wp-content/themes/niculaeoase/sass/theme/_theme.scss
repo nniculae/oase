@@ -422,4 +422,15 @@ time.updated{
         background-color: $secondary;
     }
 }
+.calendar-cards > div{
+    margin-bottom:1em;	
+ }
 
+ .page-item.active .page-link{
+     background-color: $secondary;
+     border-color: $secondary;
+ } 
+
+ .calendar-cards .pagination{
+     flex-wrap:wrap;
+ }
