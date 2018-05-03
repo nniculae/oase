@@ -12,7 +12,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 	<?php get_sidebar( 'footerfull' ); ?>
-	<div class="color-bars d-flex" style="margin-top:30px">
+	<div class="color-bars d-flex">
 		<div class="cb1"></div>
 		<div class="cb2"></div>
 		<div class="cb3"></div>
@@ -113,35 +113,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php if (!is_front_page() ) : ?>
 <a href="#" class="to-top not-home">	<i class="fa fa-angle-up"></i></a>
 <?php endif; ?>
-
-	<script>
-
-jq2 = jQuery.noConflict();
-
-jq2(function($) {
-  // Handler for .ready() called.
-
-  //Check to see if the window is top if not then display button
-  $('.to-top').fadeOut();
-  $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.to-top').fadeIn();
-        } else {
-            $('.to-top').fadeOut();
-        }
-    });
-
-    //Click event to scroll to top
-    $('.to-top').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });
-
-
-});
-
-	
-	</script>
 	</body>
 
 	</html>

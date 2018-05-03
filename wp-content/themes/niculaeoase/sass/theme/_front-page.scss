@@ -96,7 +96,7 @@
         cursor: pointer;
     }
     .to-top {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         right: 0;
         background-color: $Yellow_Apache;
@@ -109,6 +109,12 @@
         -ms-flex-item-align: end;
         align-self: flex-end
 
+        
+    }
+    @media(min-width:992px){
+        .to-top{
+            position: absolute;    
+        }
         
     }
 }
@@ -233,25 +239,27 @@
 
 /* #endregion Blocks Test */
 
-.to-top {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    // background-color: $Yellow_Apache;
-    height: 60px;
-    width: 60px;
-    font-size: 38px;
-    text-align: center;
-    color: #fff;
-    display: block;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-
-    &:hover{
-        background-color: $secondary !important;
-    }
+// .to-top {
+//     // position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     // background-color: $Yellow_Apache;
+//     height: 60px;
+//     width: 60px;
+//     font-size: 38px;
+//     text-align: center;
+//     color: #fff;
+//     display: block;
+//     -ms-flex-item-align: end;
+//     align-self: flex-end;
+//     background-color: $Yellow_Apache;
+   
+    
+//     // &:hover{
+//     //     background-color: $secondary;
+//     // }
   
-}
+// }
 
 
 // icons
